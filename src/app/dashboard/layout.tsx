@@ -22,8 +22,14 @@ function Layout({
 
 	useEffect(() => {
 		const fetchRockets = async () => {
-			const response = await axios.get("https://api.spacexdata.com/v4/rockets");
-			setRockets(response.data);
+			try {
+				const response = await axios.get(
+					"https://api.spacexdata.com/v4/rockets"
+				);
+				setRockets(response.data);
+			} catch (error) {
+				console.error("Error fetching rockets:", error);
+			}
 		};
 
 		fetchRockets();
