@@ -12,10 +12,10 @@ export default function RocketPage() {
 	const rocket = rockets.find((r) => r.id === id);
 
 	return (
-		<div className="flex flex-col gap-3 font-sans bg-black size-4/6 bg-opacity-50 p-8 rounded-md shadow-md shadow-black">
+		<div className="flex flex-col gap-3 font-sans bg-black size-5/6 md:size-4/6 bg-opacity-50 p-4 md:p-8 rounded-md shadow-md shadow-black">
 			{rocket ? (
 				<>
-					<h2 className="text-neutral-100 text-4xl text-center font-semibold pb-6">
+					<h2 className="text-neutral-100 text-3xl md:text-4xl text-center font-semibold pb-3 md:pb-6">
 						{rocket?.name}
 					</h2>
 					<div className="text-neutral-300 flex flex-col gap-4">

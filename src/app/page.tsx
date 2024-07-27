@@ -11,7 +11,7 @@ export default function Home() {
 			<Link href={"/dashboard"}>
 				<Button
 					variant="ghost"
-					className="text-neutral-100 font-sans border border-neutral-100 font-semibold bg-black bg-opacity-30 text-2xl p-8"
+					className="text-neutral-100 font-sans border border-neutral-100 font-semibold bg-black bg-opacity-30 text-xl md:text-2xl p-6 md:p-8"
 				>
 					Explore our Rockets!
 				</Button>
