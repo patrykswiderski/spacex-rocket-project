@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import logo from "/public/spacex-logo-vector.svg";
+import logo from "/public/spacex_logo_vector.svg";
 
 export default function Home() {
 	return (

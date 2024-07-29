@@ -1,8 +1,9 @@
 import React from "react";
 import Image from "next/image";
+import rocketLogo from "/public/rocket_logo.png";
 
 function Navbar() {
-	const MenuList = [
+	const menuList = [
 		{ name: "Home", path: "/" },
 		{ name: "Rockets", path: "/rockets" },
 	];
@@ -11,7 +12,7 @@ function Navbar() {
 		<nav className="flex flex-row justify-between items-center py-5 px-4 md:px-14 shadow-md shadow-neutral-500 mb-2 bg-black">
 			<div className="flex flex-row justify-between items-center gap-4">
 				<Image
-					src={"/rocket_logo.png"}
+					src={rocketLogo}
 					alt="logo with rocket"
 					width={80}
 					height={80}
@@ -23,7 +24,7 @@ function Navbar() {
 			</div>
 
 			<div className="flex flex-row gap-4 md:gap-8">
-				{MenuList.map((menu, index) => (
+				{menuList.map((menu, index) => (
 					<div
 						className="hover:scale-110 transition-all cursor-pointer"
 						key={index}
