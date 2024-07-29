@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import RocketList from "./_components/RocketList";
 import Header from "./_components/Header";
