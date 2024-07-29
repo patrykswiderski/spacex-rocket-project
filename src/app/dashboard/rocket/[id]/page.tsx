@@ -6,9 +6,7 @@ import { RocketContext } from "@/store/rocket-data-contex";
 export default function RocketPage() {
 	const pathname = usePathname();
 	const rockets = useContext(RocketContext);
-
 	const id = pathname.split("/").pop();
-
 	const rocket = rockets.find((r) => r.id === id);
 
 	return (
