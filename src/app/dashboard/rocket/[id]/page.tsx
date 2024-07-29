@@ -32,7 +32,7 @@ export default function RocketPage() {
 				</>
 			) : (
 				<h2 className="text-2xl text-center font-semibold">
-					Sorry, Rocket not found
+					Sorry, Rocket not found+
 				</h2>
 			)}
 		</div>
