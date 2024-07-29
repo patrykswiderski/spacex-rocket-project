@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { Do_Hyeon } from "next/font/google";
 import "./globals.css";
+import { Do_Hyeon } from "next/font/google";
 
 const inter = Do_Hyeon({ weight: "400", subsets: ["latin"] });
 
