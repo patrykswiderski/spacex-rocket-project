@@ -1,12 +1,5 @@
 import Link from "next/link";
-
-interface Rocket {
-	id: string;
-	name: string;
-	description: string;
-	first_flight: string;
-	wikipedia: string;
-}
+import { Rocket } from "@/app/interfaces";
 
 async function getData() {
 	const res = await fetch("https://api.spacexdata.com/v4/rockets");

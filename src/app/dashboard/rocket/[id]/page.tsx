@@ -1,14 +1,7 @@
 "use client";
 import useSWR from "swr";
 import { usePathname } from "next/navigation";
-
-interface Rocket {
-	id: string;
-	name: string;
-	description: string;
-	first_flight: string;
-	wikipedia: string;
-}
+import { Rocket } from "@/app/interfaces";
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
