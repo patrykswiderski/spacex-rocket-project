@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import rocketLogo from "/public/rocket_logo.png";
 
 function Navbar() {
 	const menuList = [
@@ -12,7 +11,7 @@ function Navbar() {
 		<nav className="flex flex-row justify-between items-center py-5 px-4 md:px-14 shadow-md shadow-neutral-500 mb-2 bg-black">
 			<div className="flex flex-row justify-between items-center gap-4">
 				<Image
-					src={rocketLogo}
+					src="/rocket_logo.png"
 					alt="logo with rocket"
 					width={80}
 					height={80}

@@ -1,8 +1,10 @@
 import Link from "next/link";
-import { Rocket } from "@/app/interfaces";
+import { Rocket } from "../../interfaces";
+
+const API_URL = process.env.NEXT_PUBLIC_SPACEX_API_URL;
 
 async function getData() {
-	const res = await fetch("https://api.spacexdata.com/v4/rockets");
+	const res = await fetch(`${API_URL}`);
 
 	if (!res.ok) {
 		throw new Error("Failed to fetch data");
