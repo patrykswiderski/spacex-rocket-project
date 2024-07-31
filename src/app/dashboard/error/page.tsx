@@ -9,7 +9,7 @@ export default function Error() {
 				Something went wrong!
 			</h1>
 			<p className="mb-4 font-sans text-neutral-100">
-				We couldn't find the rocket you're looking for.
+				We couldn&apos;t find the rocket you&apos;re looking for.
 			</p>
 			<Link href="/dashboard">
 				<Button
